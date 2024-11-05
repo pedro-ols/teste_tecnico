@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     color: var(--textColor);
@@ -12,12 +12,12 @@
 .container{
     display: flex;
 }
-.circle-1, .circle-2, .circle-3, .circle-4 {
+.circle-1, .circle-2, .circle-3, .circle-4{
     border-radius: 100%;
     background-color: turquoise;
     stroke: black;
 }
-.first-column {
+.first-column{
     background-color: var(--backgroundColor);
     width: 35%;
     height: 100vh;
@@ -25,14 +25,14 @@
     flex-flow: column-reverse;
     align-items: flex-end;
 }
-.circle-1 {
+.circle-1{
     width: 35rem;
     height: 35rem;
     margin: 1rem;
     background-image: linear-gradient(to bottom, rgb(248, 61, 4), rgb(228, 224, 3));
 }
 
-.second-column {
+.second-column{
     background-color: var(--backgroundColor);
     width: 20%;
     height: 100vh;
@@ -42,14 +42,14 @@
 
 }
 
-.circle-2 {
+.circle-2{
     width: 18rem;
     height: 18rem;
     background-image: linear-gradient( to top, rgb(90, 5, 107), rgb(90, 5, 107), rgb(119, 3, 228));
     margin-left: 2rem;
     margin-top: 3rem;
 }
-.circle-3 {
+.circle-3{
     width: 12rem;
     height: 12rem;
     background-image: linear-gradient( to top, rgb(15, 80, 88), rgb(25, 241, 248));
@@ -57,7 +57,7 @@
     margin-bottom: 9.5rem;
 }
 
-.third-column {
+.third-column{
     background-color: var(--backgroundColor);
     width: 45%;
     height: 100vh;
@@ -66,19 +66,19 @@
     align-items: center;
 }
 
-.circle-4 {
+.circle-4{
     width: 30rem;
     height: 30rem;
     background-image: linear-gradient(to bottom, rgb(248, 4, 126), rgb(228, 3, 3));
     margin-left: 6rem;
 }
-.granuladoTexture {
+.granuladoTexture{
     width: 100%;
     height: 100%;
     position: absolute;
     opacity: 0.5;
 }
-.floatingWelcome {
+.floatingWelcome{
     width: 60%;
     height: 70vh;
     background-color: rgba(160, 101, 175, 0.3);
@@ -90,20 +90,46 @@
     backdrop-filter: blur(2rem);
     box-shadow: -5rem 5rem 5rem rgba(44, 41, 41, 0.6);
 }
-.newLogin {
+.circleWithArrowsContainer{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    background-color: #edf3f3;
+    position: absolute;
+    left: 31%;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow1, .arrow2{
+    width: 70%;
+    height: 40%;
+}
+.arrow2{
+    transform: rotate(180deg);
+}
+.newLogin{
     width: 30%;
     height: 80%;
     display: flex;
     background-image: linear-gradient(to bottom, rgb(235, 225, 225, 0.5), rgb(228, 3, 3, 0.0));
     border-top-left-radius: 1rem;
     flex-flow: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     padding: 3rem;
 }
 .welcomeTitle{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: lighter;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    align-self: flex-start;
+}
+.createAccount{
+    margin-bottom: 10rem;
 }
 .createAccountTitle{
     font-size: 3rem;
@@ -125,6 +151,8 @@
     border: none;
     height: 3rem;
     width: 80%;
+    align-self: center;
+    justify-self: center;
 }
 .logarButton{
     width: 30%;
@@ -139,7 +167,39 @@
     background-image: linear-gradient(to right, rgb(235, 225, 225, 0.5), rgb(235, 225, 225, 0.0));
     border: none;
 }
-.mediasContainer {
+.mediaLogin{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--backgroundColor);
+}
+.loginTitle{
+    font-size: 4rem;
+}
+.contactMedia{
+    width: 2rem;
+    height: 2rem;
+}
+.entrarButton{
+    width: 50%;
+    background-color: var(--textColor);
+    color: #edf3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 3rem;
+    border: none;
+}
+.entrarButtonH2{
+    color: var(--backgroundColor);
+    letter-spacing: 12px;
+}
+.mediasContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +250,31 @@
     background-color: var(--textColor);
     margin-right: 3rem;
 }
-.otherMedias{
+.rememberMeContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.rememberMe{
+    width: 1rem;
+    height: 1rem;
+}
+.otherMediasContainer{
     margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.otherMedias{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.media-unity{
+    width: 100%;
+    height: 100%;
 }
